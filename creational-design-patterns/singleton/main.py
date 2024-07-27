@@ -11,8 +11,6 @@ class MetaSingleton(type):
 
 
 class Logger(metaclass=MetaSingleton):
-    _name: str = None
-
     def __init__(self, name) -> None:
         self._name = name
 
