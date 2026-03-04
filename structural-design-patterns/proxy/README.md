@@ -22,7 +22,6 @@
 - **Caching request results (caching proxy). This is when you need to cache results of client requests and manage the life cycle of this cache, especially if results are quite large.** The proxy can implement caching for recurring requests that always yield the same results. The proxy may use the parameters of requests as the cache keys.
 - **Smart reference. This is when you need to be able to dismiss a heavyweight object once there are no clients that use it.** The proxy can keep track of clients that obtained a reference to the service object or its results. From time to time, the proxy may go over the clients and check whether they are still active. If the client list gets empty, the proxy might dismiss the service object and free the underlying system resources. The proxy can also track whether the client had modified the service object. Then the unchanged objects may be reused by other clients.
 
-
 ### Pros and Cons
 
 ✔️ You can control the service object without clients knowing about it.

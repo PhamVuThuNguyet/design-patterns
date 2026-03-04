@@ -6,7 +6,7 @@
 
 ### Problems
 
-Say you have an object, and you want to create an exact copy of it. How would you do it? First, you have to create a new object of the same class. Then you have to go through all the fields of the original object and copy their values over to the new object. But there’s a catch. 
+Say you have an object, and you want to create an exact copy of it. How would you do it? First, you have to create a new object of the same class. Then you have to go through all the fields of the original object and copy their values over to the new object. But there’s a catch.
 
 - Not all objects can be copied that way because some of the object’s fields may be private and not visible from outside of the object itself.
 - Since you have to know the object’s class to create a duplicate, your code becomes dependent on that class.
